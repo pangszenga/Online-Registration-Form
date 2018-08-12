@@ -1,0 +1,467 @@
+/* -- Base Styles -- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif, Helvetica, Arial, sans-serif, arial;
+  line-height: 1.5;
+  background:linear-gradient(white,#536E85 90%, #354E63 98%);
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+fieldset {
+  border-style: none;
+  padding: 0;
+}
+
+footer {
+  color: white;
+  text-align: center;
+
+}
+
+/* Header - The code review */
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  background-color: #354E63;
+  font-size: 2em;
+  color: white;
+  margin-top: 0;
+  padding: .5em 1.5em .5em 1.5em;
+}
+
+.header h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.header p {
+  padding: 0 .5em;
+  margin-bottom: 2em;
+  color: #9CB4C8;
+}
+
+
+/* Contact and Newsletter section */
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container div {
+  justify-content: space-around;
+}
+
+input[type="text"] ,
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius:0.2em;
+  border-style: none;
+  background-color: #DCE5ED;
+  padding: 1em;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-flex;
+}
+
+.contact {
+  margin: 0 .7em;
+  padding: 1.5em 0;
+  border-top: double .5em #354E63;
+}
+
+.newsletter {
+  margin: 0 .7em;
+  padding: 1.5em 0;
+  border-top: solid .25em #354E63;
+}
+
+.newsletter h1 {
+  font-size: 1em;
+}
+
+.newsletter p {
+  display: flex;
+}
+
+.newsletter input {
+  order: 1;
+}
+
+.newsletter label {
+  order: 2;
+}
+
+fieldset:nth-child(6) {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+input[type="radio"] {
+  order: 1;
+}
+#choice + label {
+    order: 2;
+}
+
+
+textarea {
+  background-color: #DCE5ED;
+  border: none;
+}
+
+.button {
+  padding: .9em;
+  margin: 2em 1em;
+  color: white;
+  font-size: 1em;
+  background-color: #7BD2E7;
+  border-radius:0.2em;
+  align-self: center;
+  border-style: none;
+  width: 90%;
+}
+
+
+/* Psuedo classes */
+
+
+input[type="text"]:focus {
+  cursor: default;
+  outline: none;
+  border-color: #3F739D;
+  border-radius:0.2em;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+input[type="tel"]:focus{
+  cursor: default;
+  outline: none;
+  border-color: #3F739D;
+  border-radius:0.2em;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+input[type="email"]:focus {
+  cursor: default;
+  outline: none;
+  border-color: #3F739D;
+  border-radius:0.2em;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+select:focus {
+  cursor: default;
+  outline: none;
+  border-color: #3F739D;
+  border-radius:0.2em;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+
+input::placeholder {
+  text-align: right;
+  color: #9CB4C8;
+}
+
+textarea:focus {
+    background-color:#D5F1F8;
+    outline: none;
+    border-color: #3F739D;
+    border-radius:0.2em;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.button:hover {
+  border-radius: .2em;
+  width: 200%;
+  box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 90px #7BD2E7,
+      inset -20px 0 80px #A7EE8E,
+      inset 20px 0 300px #8EEED1,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #C3EDF7,
+      10px 0 80px #0ff;
+}
+
+
+
+/* --Media Queries-- */
+/* --Tablets-- */
+
+@media screen and (min-width: 768px) {
+
+
+.header h1 {
+  font-size: 2.5em;
+  padding:.5em 4em;
+}
+
+.header h2 {
+  margin-top: 2em;
+}
+
+.header p {
+  font-size: 1em;
+  margin: .5em 0 3.5em 0;
+}
+
+.header p {
+  padding: 0 .5em;
+  margin-bottom: 2em;
+  color: #9CB4C8;
+}
+
+
+/* Contact and Newsletter section */
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5em;
+}
+
+.container div {
+  justify-content: space-around;
+}
+
+input[type="text"] ,
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius:0.2em;
+  border-style: none;
+  background-color: #DCE5ED;
+  padding: 1em;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-flex;
+}
+
+.contact {
+  margin: 0 .7em;
+  padding: 1.5em 0;
+  border-top: double .5em #354E63;
+}
+
+.newsletter {
+  margin: 0 .7em;
+  padding: 1.5em 0;
+  border-top: solid .25em #354E63;
+}
+
+.newsletter h1 {
+  font-size: 1em;
+}
+
+.newsletter p {
+  display: flex;
+}
+
+.newsletter input {
+  order: 1;
+}
+
+.newsletter label {
+  order: 2;
+}
+
+fieldset:nth-child(6) {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+input[type="radio"] {
+  order: 1;
+}
+#choice + label {
+    order: 2;
+}
+
+
+textarea {
+  background-color: #DCE5ED;
+  border: none;
+}
+
+.button {
+  padding: .9em;
+  margin: 2em 1em;
+  color: white;
+  font-size: 1em;
+  background-color: #7BD2E7;
+  border-radius:0.2em;
+  align-self: center;
+  border-style: none;
+  width: 96%;
+}
+
+
+
+}
+
+
+/* --Desktop-- */
+
+@media screen and (min-width: 1028px) {
+
+
+  .header h1 {
+    font-size: 2.5em;
+    padding:.5em 4em;
+  }
+
+  .header h2 {
+    margin-top: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+    margin: .5em 0 3.5em 0;
+  }
+
+  .header p {
+    padding: 0 .5em;
+    margin-bottom: 2em;
+    color: #9CB4C8;
+  }
+
+
+  /* Contact and Newsletter section */
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5em 20em;
+  }
+
+  .container div {
+    justify-content: space-around;
+  }
+
+  input[type="text"] ,
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:0.2em;
+    border-style: none;
+    background-color: #DCE5ED;
+    padding: 1em;
+    width: 100%;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline-flex;
+  }
+
+  .contact {
+    margin: 0 .7em;
+    padding: 1.5em 0;
+    border-top: double .5em #354E63;
+  }
+
+  .newsletter {
+    margin: 0 .7em;
+    padding: 1.5em 0;
+    border-top: solid .25em #354E63;
+  }
+
+  .newsletter h1 {
+    font-size: 1em;
+  }
+
+  .newsletter p {
+    display: flex;
+  }
+
+  .newsletter input {
+    order: 1;
+  }
+
+  .newsletter label {
+    order: 2;
+  }
+
+  fieldset:nth-child(6) {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  input[type="radio"] {
+    order: 1;
+  }
+  #choice + label {
+      order: 2;
+  }
+
+
+  textarea {
+    background-color: #DCE5ED;
+    border: none;
+  }
+
+  .button {
+    padding: .9em;
+    margin: 2em 1em;
+    color: white;
+    font-size: 1em;
+    background-color: #7BD2E7;
+    border-radius:0.2em;
+    align-self: center;
+    border-style: none;
+    width: 98%;
+  }
+
+
+
+}
